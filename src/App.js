@@ -30,6 +30,11 @@ function App() {
         setGameStatus(true);
     };
 
+    // set title
+    useEffect(() => {
+        document.title = "Minesweeper"
+    }, [])
+
     return (
         <div className="App">
             <Menu difficulty={difficulty} setDifficulty={setDifficulty} flagsLeft={flagsLeft} />
